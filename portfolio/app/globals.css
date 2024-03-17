@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definición de colores */
+:root {
+  --foreground-color: #000; /* Color del texto */
+  --background-color: #f7fafc; /* Color de fondo */
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-color: #fff;
+    --background-color: #1a202c;
+  }
+}
+
+/* Estilos generales del body */
+body {
+  color: var(--foreground-color);
+  background-color: var(--background-color);
+}
+
+/* Estilos adicionales */
+@layer utilities {
+  /* Agregar clases de utilidad personalizadas aquí si es necesario */
+}
